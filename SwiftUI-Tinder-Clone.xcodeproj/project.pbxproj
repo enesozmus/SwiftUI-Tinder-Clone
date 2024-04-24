@@ -12,6 +12,8 @@
 		DFA584F72BD952C2000BDA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA584F62BD952C2000BDA95 /* Assets.xcassets */; };
 		DFA584FA2BD952C2000BDA95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA584F92BD952C2000BDA95 /* Preview Assets.xcassets */; };
 		DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585032BD952F3000BDA95 /* MainTabView.swift */; };
+		DFA585082BD9557F000BDA95 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585072BD9557F000BDA95 /* CardView.swift */; };
+		DFA5850A2BD95928000BDA95 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585092BD95928000BDA95 /* UserInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		DFA584F62BD952C2000BDA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFA584F92BD952C2000BDA95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DFA585032BD952F3000BDA95 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		DFA585072BD9557F000BDA95 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DFA585092BD95928000BDA95 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		DFA585012BD952CE000BDA95 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DFA585052BD9556E000BDA95 /* Cards */,
 				DFA585022BD952DF000BDA95 /* TabBar */,
 			);
 			path = Core;
@@ -92,6 +97,23 @@
 				DFA585032BD952F3000BDA95 /* MainTabView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DFA585052BD9556E000BDA95 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				DFA585062BD95573000BDA95 /* Views */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		DFA585062BD95573000BDA95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFA585072BD9557F000BDA95 /* CardView.swift */,
+				DFA585092BD95928000BDA95 /* UserInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +188,9 @@
 			files = (
 				DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */,
 				DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */,
+				DFA585082BD9557F000BDA95 /* CardView.swift in Sources */,
 				DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */,
+				DFA5850A2BD95928000BDA95 /* UserInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
