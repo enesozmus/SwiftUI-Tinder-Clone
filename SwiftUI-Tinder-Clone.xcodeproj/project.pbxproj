@@ -11,6 +11,7 @@
 		DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA584F42BD952C2000BDA95 /* ContentView.swift */; };
 		DFA584F72BD952C2000BDA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA584F62BD952C2000BDA95 /* Assets.xcassets */; };
 		DFA584FA2BD952C2000BDA95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA584F92BD952C2000BDA95 /* Preview Assets.xcassets */; };
+		DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585032BD952F3000BDA95 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DFA584F42BD952C2000BDA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFA584F62BD952C2000BDA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFA584F92BD952C2000BDA95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFA585032BD952F3000BDA95 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,10 @@
 		DFA584F12BD952C2000BDA95 /* SwiftUI-Tinder-Clone */ = {
 			isa = PBXGroup;
 			children = (
-				DFA584F22BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift */,
-				DFA584F42BD952C2000BDA95 /* ContentView.swift */,
+				DFA585002BD952C9000BDA95 /* App */,
 				DFA584F62BD952C2000BDA95 /* Assets.xcassets */,
+				DFA584F42BD952C2000BDA95 /* ContentView.swift */,
+				DFA585012BD952CE000BDA95 /* Core */,
 				DFA584F82BD952C2000BDA95 /* Preview Content */,
 			);
 			path = "SwiftUI-Tinder-Clone";
@@ -65,6 +68,30 @@
 				DFA584F92BD952C2000BDA95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFA585002BD952C9000BDA95 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DFA584F22BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DFA585012BD952CE000BDA95 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DFA585022BD952DF000BDA95 /* TabBar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DFA585022BD952DF000BDA95 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DFA585032BD952F3000BDA95 /* MainTabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			files = (
 				DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */,
 				DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */,
+				DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
