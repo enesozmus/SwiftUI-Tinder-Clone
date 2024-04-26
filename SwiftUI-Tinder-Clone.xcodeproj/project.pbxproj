@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF6776A52BDB9748008AB0D1 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776A42BDB9748008AB0D1 /* SizeConstants.swift */; };
 		DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA584F22BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift */; };
 		DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA584F42BD952C2000BDA95 /* ContentView.swift */; };
 		DFA584F72BD952C2000BDA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA584F62BD952C2000BDA95 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF6776A42BDB9748008AB0D1 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
 		DFA584EF2BD952C2000BDA95 /* SwiftUI-Tinder-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Tinder-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA584F22BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tinder_CloneApp.swift; sourceTree = "<group>"; };
 		DFA584F42BD952C2000BDA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF6776A12BDB968E008AB0D1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776A22BDB9736008AB0D1 /* Constants */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DF6776A22BDB9736008AB0D1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776A42BDB9748008AB0D1 /* SizeConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		DFA584E62BD952C1000BDA95 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +80,7 @@
 				DFA584F42BD952C2000BDA95 /* ContentView.swift */,
 				DFA585012BD952CE000BDA95 /* Core */,
 				DFA584F82BD952C2000BDA95 /* Preview Content */,
+				DF6776A12BDB968E008AB0D1 /* Utils */,
 			);
 			path = "SwiftUI-Tinder-Clone";
 			sourceTree = "<group>";
@@ -188,6 +207,7 @@
 			files = (
 				DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */,
 				DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */,
+				DF6776A52BDB9748008AB0D1 /* SizeConstants.swift in Sources */,
 				DFA585082BD9557F000BDA95 /* CardView.swift in Sources */,
 				DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */,
 				DFA5850A2BD95928000BDA95 /* UserInfoView.swift in Sources */,
