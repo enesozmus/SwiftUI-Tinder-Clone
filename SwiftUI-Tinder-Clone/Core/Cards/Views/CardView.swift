@@ -13,9 +13,12 @@ struct CardView: View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image(.jane1)
-                .resizable()
-                .scaledToFill()
+            ZStack(alignment: .top) {
+                Image(.jane1)
+                    .resizable()
+                    .scaledToFill()
+                SwipeActionIndicatorView(xOffset: $xOffset)
+            }
             
             UserInfoView()
                 .padding(.horizontal)
