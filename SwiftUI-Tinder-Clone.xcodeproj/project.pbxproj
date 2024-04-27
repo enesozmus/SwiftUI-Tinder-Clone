@@ -27,6 +27,8 @@
 		DFA585082BD9557F000BDA95 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585072BD9557F000BDA95 /* CardView.swift */; };
 		DFA5850A2BD95928000BDA95 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585092BD95928000BDA95 /* UserInfoView.swift */; };
 		DFDB84302BDD34BF00F17DBB /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB842F2BDD34BF00F17DBB /* UserProfileView.swift */; };
+		DFDB84322BDD3F1900F17DBB /* CurrentUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB84312BDD3F1900F17DBB /* CurrentUserProfile.swift */; };
+		DFDB84362BDD3F5700F17DBB /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB84352BDD3F5700F17DBB /* CurrentUserProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		DFA585072BD9557F000BDA95 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DFA585092BD95928000BDA95 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		DFDB842F2BDD34BF00F17DBB /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		DFDB84312BDD3F1900F17DBB /* CurrentUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfile.swift; sourceTree = "<group>"; };
+		DFDB84352BDD3F5700F17DBB /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 		DFDB842D2BDD349E00F17DBB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				DFDB84312BDD3F1900F17DBB /* CurrentUserProfile.swift */,
+				DFDB84352BDD3F5700F17DBB /* CurrentUserProfileHeaderView.swift */,
 				DFDB842F2BDD34BF00F17DBB /* UserProfileView.swift */,
 			);
 			path = Profile;
@@ -301,6 +307,7 @@
 				DFDB84302BDD34BF00F17DBB /* UserProfileView.swift in Sources */,
 				DF6776BD2BDBEE2D008AB0D1 /* CardsService.swift in Sources */,
 				DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */,
+				DFDB84362BDD3F5700F17DBB /* CurrentUserProfileHeaderView.swift in Sources */,
 				DF6776A52BDB9748008AB0D1 /* SizeConstants.swift in Sources */,
 				DF6776C02BDBEF05008AB0D1 /* MockData.swift in Sources */,
 				DF6D85822BDD085600558998 /* SwipeAction.swift in Sources */,
@@ -312,6 +319,7 @@
 				DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */,
 				DF6776A72BDB9BC3008AB0D1 /* SwipeActionIndicatorView.swift in Sources */,
 				DFA5850A2BD95928000BDA95 /* UserInfoView.swift in Sources */,
+				DFDB84322BDD3F1900F17DBB /* CurrentUserProfile.swift in Sources */,
 				DF6776BA2BDBECED008AB0D1 /* CardsViewModel.swift in Sources */,
 				DF6776A92BDBC67E008AB0D1 /* ImageScrollingOverlayView.swift in Sources */,
 				DF6776B42BDBEAC0008AB0D1 /* User.swift in Sources */,
