@@ -12,6 +12,11 @@
 		DF6776A92BDBC67E008AB0D1 /* ImageScrollingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776A82BDBC67E008AB0D1 /* ImageScrollingOverlayView.swift */; };
 		DF6776AB2BDBD919008AB0D1 /* CardImageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776AA2BDBD919008AB0D1 /* CardImageIndicatorView.swift */; };
 		DF6776AD2BDBE036008AB0D1 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776AC2BDBE036008AB0D1 /* CardStackView.swift */; };
+		DF6776B42BDBEAC0008AB0D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776B32BDBEAC0008AB0D1 /* User.swift */; };
+		DF6776B72BDBEB06008AB0D1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776B62BDBEB06008AB0D1 /* Card.swift */; };
+		DF6776BA2BDBECED008AB0D1 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776B92BDBECED008AB0D1 /* CardsViewModel.swift */; };
+		DF6776BD2BDBEE2D008AB0D1 /* CardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776BC2BDBEE2D008AB0D1 /* CardsService.swift */; };
+		DF6776C02BDBEF05008AB0D1 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776BF2BDBEF05008AB0D1 /* MockData.swift */; };
 		DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA584F22BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift */; };
 		DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA584F42BD952C2000BDA95 /* ContentView.swift */; };
 		DFA584F72BD952C2000BDA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA584F62BD952C2000BDA95 /* Assets.xcassets */; };
@@ -27,6 +32,11 @@
 		DF6776A82BDBC67E008AB0D1 /* ImageScrollingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollingOverlayView.swift; sourceTree = "<group>"; };
 		DF6776AA2BDBD919008AB0D1 /* CardImageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageIndicatorView.swift; sourceTree = "<group>"; };
 		DF6776AC2BDBE036008AB0D1 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		DF6776B32BDBEAC0008AB0D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF6776B62BDBEB06008AB0D1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DF6776B92BDBECED008AB0D1 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		DF6776BC2BDBEE2D008AB0D1 /* CardsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsService.swift; sourceTree = "<group>"; };
+		DF6776BF2BDBEF05008AB0D1 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		DFA584EF2BD952C2000BDA95 /* SwiftUI-Tinder-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Tinder-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA584F22BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tinder_CloneApp.swift; sourceTree = "<group>"; };
 		DFA584F42BD952C2000BDA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				DF6776A22BDB9736008AB0D1 /* Constants */,
+				DF6776BE2BDBEEFB008AB0D1 /* MockData */,
+				DF6776B02BDBEAA3008AB0D1 /* Users */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -62,6 +74,54 @@
 				DF6776A42BDB9748008AB0D1 /* SizeConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		DF6776B02BDBEAA3008AB0D1 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776B12BDBEAAF008AB0D1 /* Model */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		DF6776B12BDBEAAF008AB0D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776B32BDBEAC0008AB0D1 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF6776B52BDBEAF0008AB0D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776B62BDBEB06008AB0D1 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF6776B82BDBECDC008AB0D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776B92BDBECED008AB0D1 /* CardsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DF6776BB2BDBEE20008AB0D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776BC2BDBEE2D008AB0D1 /* CardsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DF6776BE2BDBEEFB008AB0D1 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				DF6776BF2BDBEF05008AB0D1 /* MockData.swift */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 		DFA584E62BD952C1000BDA95 = {
@@ -129,6 +189,9 @@
 		DFA585052BD9556E000BDA95 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				DF6776B52BDBEAF0008AB0D1 /* Model */,
+				DF6776BB2BDBEE20008AB0D1 /* Service */,
+				DF6776B82BDBECDC008AB0D1 /* ViewModel */,
 				DFA585062BD95573000BDA95 /* Views */,
 			);
 			path = Cards;
@@ -218,15 +281,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */,
+				DF6776BD2BDBEE2D008AB0D1 /* CardsService.swift in Sources */,
 				DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */,
 				DF6776A52BDB9748008AB0D1 /* SizeConstants.swift in Sources */,
+				DF6776C02BDBEF05008AB0D1 /* MockData.swift in Sources */,
 				DFA585082BD9557F000BDA95 /* CardView.swift in Sources */,
 				DF6776AB2BDBD919008AB0D1 /* CardImageIndicatorView.swift in Sources */,
+				DF6776B72BDBEB06008AB0D1 /* Card.swift in Sources */,
 				DF6776AD2BDBE036008AB0D1 /* CardStackView.swift in Sources */,
 				DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */,
 				DF6776A72BDB9BC3008AB0D1 /* SwipeActionIndicatorView.swift in Sources */,
 				DFA5850A2BD95928000BDA95 /* UserInfoView.swift in Sources */,
+				DF6776BA2BDBECED008AB0D1 /* CardsViewModel.swift in Sources */,
 				DF6776A92BDBC67E008AB0D1 /* ImageScrollingOverlayView.swift in Sources */,
+				DF6776B42BDBEAC0008AB0D1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

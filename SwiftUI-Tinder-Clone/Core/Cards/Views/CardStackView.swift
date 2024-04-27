@@ -9,15 +9,15 @@ import SwiftUI
 
 struct CardStackView: View {
     
-    @State private var showMatchView = true
+    @StateObject var viewModel = CardsViewModel(service: CardsService())
     
     var body: some View {
         NavigationStack {
             ZStack {
                 VStack(spacing: 16) {
                     ZStack {
-                        ForEach(0 ..< 10) { card in
-                            CardView()
+                        ForEach(viewModel.cards) { card in
+                            CardView(card: card)
                         }
                     }
                 }
