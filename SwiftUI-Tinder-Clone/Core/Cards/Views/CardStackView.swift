@@ -24,6 +24,14 @@ struct CardStackView: View {
                         SwipeActionButtonsView(vm: viewModel)
                     }
                 }
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Image(.tinderLogo)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 88)
+                    }
+                }
             }
         }
     }

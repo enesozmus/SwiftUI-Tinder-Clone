@@ -12,6 +12,7 @@ struct CardView: View {
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
     @State private var currentImageIndex = 0
+    @State private var showProfileSheet: Bool = false
     
     let card: Card
     
@@ -29,7 +30,10 @@ struct CardView: View {
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
             
-            UserInfoView(user: user)
+            UserInfoView(showProfileSheet: $showProfileSheet, user: user)
+        }
+        .fullScreenCover(isPresented: $showProfileSheet) {
+            UserProfileView(user: user)
         }
         .onReceive(vm.$buttonSwipeAction, perform: { action in
             onReceiveSwipeAction(action)
@@ -124,5 +128,5 @@ private extension CardView {
 #Preview {
     CardView(
         vm: CardsViewModel(service: CardsService()),
-        card: Card(user: MockData.users[5]))
+        card: Card(user: MockData.users[4]))
 }

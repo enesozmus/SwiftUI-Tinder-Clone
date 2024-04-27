@@ -26,6 +26,7 @@
 		DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585032BD952F3000BDA95 /* MainTabView.swift */; };
 		DFA585082BD9557F000BDA95 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585072BD9557F000BDA95 /* CardView.swift */; };
 		DFA5850A2BD95928000BDA95 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA585092BD95928000BDA95 /* UserInfoView.swift */; };
+		DFDB84302BDD34BF00F17DBB /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDB842F2BDD34BF00F17DBB /* UserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		DFA585032BD952F3000BDA95 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		DFA585072BD9557F000BDA95 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DFA585092BD95928000BDA95 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		DFDB842F2BDD34BF00F17DBB /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				DFA585052BD9556E000BDA95 /* Cards */,
+				DFDB842D2BDD349E00F17DBB /* Profile */,
 				DFA585022BD952DF000BDA95 /* TabBar */,
 			);
 			path = Core;
@@ -214,6 +217,14 @@
 				DFA585092BD95928000BDA95 /* UserInfoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DFDB842D2BDD349E00F17DBB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DFDB842F2BDD34BF00F17DBB /* UserProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA584F52BD952C2000BDA95 /* ContentView.swift in Sources */,
+				DFDB84302BDD34BF00F17DBB /* UserProfileView.swift in Sources */,
 				DF6776BD2BDBEE2D008AB0D1 /* CardsService.swift in Sources */,
 				DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */,
 				DF6776A52BDB9748008AB0D1 /* SizeConstants.swift in Sources */,
