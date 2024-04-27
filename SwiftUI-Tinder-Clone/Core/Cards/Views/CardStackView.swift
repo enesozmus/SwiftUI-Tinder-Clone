@@ -17,8 +17,11 @@ struct CardStackView: View {
                 VStack(spacing: 16) {
                     ZStack {
                         ForEach(viewModel.cards) { card in
-                            CardView(card: card)
+                            CardView(vm: viewModel, card: card)
                         }
+                    }
+                    if !viewModel.cards.isEmpty {
+                        SwipeActionButtonsView(vm: viewModel)
                     }
                 }
             }

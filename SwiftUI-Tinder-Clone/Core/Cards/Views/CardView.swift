@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
+    @ObservedObject var vm: CardsViewModel
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
     @State private var currentImageIndex = 0
@@ -30,6 +31,9 @@ struct CardView: View {
             
             UserInfoView(user: user)
         }
+        .onReceive(vm.$buttonSwipeAction, perform: { action in
+            onReceiveSwipeAction(action)
+        })
         .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 25))
         .offset(x: xOffset)
@@ -72,20 +76,21 @@ private extension CardView {
         xOffset = 0;
         degrees = 0;
     }
-    
-    // ...
     func swipeRight() {
         withAnimation {
             xOffset = 500
             degrees = 12
+        } completion: {
+            vm.removeCard(card)
         }
     }
     
-    // ...
     func swipeLeft() {
         withAnimation {
             xOffset = -500
             degrees = -12
+        } completion: {
+            vm.removeCard(card)
         }
     }
     
@@ -96,11 +101,28 @@ private extension CardView {
     var imageCount: Int {
         return user.profileImageURLs.count
     }
+    
+    // ...
+    func onReceiveSwipeAction(_ action: SwipeAction?) {
+        guard let action else { return }
+        let topCard = vm.cards.last
+        
+        if topCard == card {
+            switch action {
+            case .reject:
+                swipeLeft()
+            case .like:
+                swipeRight()
+            }
+        }
+    }
 }
 
 private extension CardView {
 }
 
 #Preview {
-    CardView(card: Card(user: MockData.users[5]))
+    CardView(
+        vm: CardsViewModel(service: CardsService()),
+        card: Card(user: MockData.users[5]))
 }
