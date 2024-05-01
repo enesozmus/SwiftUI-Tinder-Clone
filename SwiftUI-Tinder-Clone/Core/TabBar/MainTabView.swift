@@ -7,24 +7,28 @@
 
 import SwiftUI
 
+enum TabbarType: Int {
+    case swiping, search, inbox, profile
+}
+
 struct MainTabView: View {
     var body: some View {
         TabView {
             CardStackView()
                 .tabItem { Image(systemName: "flame") }
-                .tag(0)
+                .tag(TabbarType.swiping)
             
             Text("Search View")
                 .tabItem { Image(systemName: "magnifyingglass") }
-                .tag(1)
+                .tag(TabbarType.search)
             
             Text("Inbox View")
-                .tabItem { Image(systemName: "bubble") }
-                .tag(2)
+                .tabItem { Image(.messagesIcon).renderingMode(.template) }
+                .tag(TabbarType.inbox)
             
-            CurrentUserProfileView(user: MockData.users[1])
+            CurrentUserProfileView(user: MockData.users[2])
                 .tabItem { Image(systemName: "person") }
-                .tag(3)
+                .tag(TabbarType.profile)
         }
         .tint(.primary)
     }

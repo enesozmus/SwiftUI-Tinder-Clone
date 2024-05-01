@@ -19,6 +19,7 @@
 		DF6776C02BDBEF05008AB0D1 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6776BF2BDBEF05008AB0D1 /* MockData.swift */; };
 		DF6D66682BE2BC8B00F7303B /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D66672BE2BC8B00F7303B /* EditProfileView.swift */; };
 		DF6D666A2BE2C07F00F7303B /* ProfileImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D66692BE2C07F00F7303B /* ProfileImageGridView.swift */; };
+		DF6D666E2BE2C4CC00F7303B /* UserMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D666D2BE2C4CC00F7303B /* UserMatchView.swift */; };
 		DF6D85802BDD05BB00558998 /* SwipeActionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D857F2BDD05BB00558998 /* SwipeActionButtonsView.swift */; };
 		DF6D85822BDD085600558998 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D85812BDD085600558998 /* SwipeAction.swift */; };
 		DFA584F32BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA584F22BD952C2000BDA95 /* SwiftUI_Tinder_CloneApp.swift */; };
@@ -46,6 +47,7 @@
 		DF6776BF2BDBEF05008AB0D1 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		DF6D66672BE2BC8B00F7303B /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		DF6D66692BE2C07F00F7303B /* ProfileImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageGridView.swift; sourceTree = "<group>"; };
+		DF6D666D2BE2C4CC00F7303B /* UserMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMatchView.swift; sourceTree = "<group>"; };
 		DF6D857F2BDD05BB00558998 /* SwipeActionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonsView.swift; sourceTree = "<group>"; };
 		DF6D85812BDD085600558998 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		DFA584EF2BD952C2000BDA95 /* SwiftUI-Tinder-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Tinder-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +159,30 @@
 			path = EditProfile;
 			sourceTree = "<group>";
 		};
+		DF6D666B2BE2C4B500F7303B /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D666F2BE2C4E300F7303B /* Manager */,
+				DF6D666C2BE2C4C000F7303B /* View */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		DF6D666C2BE2C4C000F7303B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D666D2BE2C4CC00F7303B /* UserMatchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF6D666F2BE2C4E300F7303B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		DFA584E62BD952C1000BDA95 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				DFA585052BD9556E000BDA95 /* Cards */,
+				DF6D666B2BE2C4B500F7303B /* Matches */,
 				DFDB842D2BDD349E00F17DBB /* Profile */,
 				DFA585022BD952DF000BDA95 /* TabBar */,
 			);
@@ -338,6 +365,7 @@
 				DF6776AB2BDBD919008AB0D1 /* CardImageIndicatorView.swift in Sources */,
 				DF6D85802BDD05BB00558998 /* SwipeActionButtonsView.swift in Sources */,
 				DF6776B72BDBEB06008AB0D1 /* Card.swift in Sources */,
+				DF6D666E2BE2C4CC00F7303B /* UserMatchView.swift in Sources */,
 				DF6776AD2BDBE036008AB0D1 /* CardStackView.swift in Sources */,
 				DF6D666A2BE2C07F00F7303B /* ProfileImageGridView.swift in Sources */,
 				DFA585042BD952F3000BDA95 /* MainTabView.swift in Sources */,
