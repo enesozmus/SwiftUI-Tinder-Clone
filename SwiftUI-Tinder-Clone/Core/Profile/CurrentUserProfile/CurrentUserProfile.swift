@@ -10,11 +10,13 @@ import SwiftUI
 struct CurrentUserProfileView: View {
     
     let user: User
+    @State private var showEditProfile: Bool = false
     
     var body: some View {
         NavigationStack {
             List {
                 CurrentUserProfileHeaderView(user: user)
+                    .onTapGesture { showEditProfile.toggle() }
                 
                 Section("Account Information") {
                     HStack {
@@ -41,6 +43,9 @@ struct CurrentUserProfileView: View {
             }
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
+            .fullScreenCover(isPresented: $showEditProfile) {
+                EditProfileView(user: user)
+            }
         }
     }
 }
