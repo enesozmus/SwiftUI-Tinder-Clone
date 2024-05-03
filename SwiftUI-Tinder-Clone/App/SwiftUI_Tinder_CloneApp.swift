@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUI_Tinder_CloneApp: App {
+    
+    @StateObject var matchManager = MatchManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(matchManager)
         }
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CardStackView: View {
     
+    @EnvironmentObject var matchManager: MatchManager
+    @State private var showMatchView = false
     @StateObject var viewModel = CardsViewModel(service: CardsService())
     
     var body: some View {
@@ -24,13 +26,21 @@ struct CardStackView: View {
                         SwipeActionButtonsView(vm: viewModel)
                     }
                 }
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Image(.tinderLogo)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 88)
-                    }
+                .blur(radius: showMatchView ? 20 : 0)
+                
+                if showMatchView {
+                    UserMatchView(show: $showMatchView)
+                }
+            }
+            .onReceive(matchManager.$matchedUser) { user in
+                showMatchView = user != nil
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Image(.tinderLogo)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 88)
                 }
             }
         }
@@ -39,4 +49,5 @@ struct CardStackView: View {
 
 #Preview {
     CardStackView()
+        .environmentObject(MatchManager())
 }

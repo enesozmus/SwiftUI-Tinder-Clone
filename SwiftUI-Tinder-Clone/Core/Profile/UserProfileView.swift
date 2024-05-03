@@ -100,5 +100,5 @@ struct UserProfileView: View {
 }
 
 #Preview {
-    UserProfileView(user: MockData.users.last!)
+    UserProfileView(user: MockData.users[0])
 }

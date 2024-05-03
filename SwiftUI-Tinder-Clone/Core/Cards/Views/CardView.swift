@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CardView: View {
+    
+    @EnvironmentObject var matchManager: MatchManager
     @ObservedObject var vm: CardsViewModel
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
@@ -86,6 +88,7 @@ private extension CardView {
             degrees = 12
         } completion: {
             vm.removeCard(card)
+            matchManager.checkForMatch(withUser: user)
         }
     }
     
